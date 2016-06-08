@@ -1,16 +1,17 @@
-ul.article-list
-  - page.posts.each(function(article){
-    li
+section#content
+  ul.article-list
+    - page.posts.each(function(article){
+    li.reveal-detect
       article
-        h2
-          a(href=config.root + article.path)= article.title
-        div.meta
-          include _partial/article_meta
+        div.article-head
+          h2.article-title
+            a(href=config.root + article.path)= article.title
+          div.meta.article-date
+            include _partial/article_meta
+            +date(article.date)
+        // abstract
+        div.article-content.markdown-body
+          p!= article.excerpt
+    - })
 
-          +date(article.date)
-
-          +category(article.categories)
-
-  - })
-
-include _partial/article_list_pagination
+  include _partial/article_list_pagination

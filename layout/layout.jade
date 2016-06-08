@@ -5,13 +5,17 @@ html(lang='en')
   head
     include _partial/head
   body(class=bodyclass)
-    header#page-header
-      div#masthead
-        block header
-          h1#site-title
-            a(href=config.root)= config.title
-          p#site-slogan= config.subtitle
-    section#content
+    include _partial/slide
+    section#top-head
+      div#top-head-wraper
+        a(href=config.root)= config.title
+        i.fa.fa-bars#top-head-menu-button(aria-hidden="true")
+    div.wrapper
+      include _partial/index_header
       != body
-    footer#page-footer
-      include _partial/footer
+      footer#page-footer
+        include _partial/footer
+    !=js("http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js")
+    !=js(theme.cdn + "/script/futil.js")
+    !=js(theme.cdn + "/script/app.js")
+

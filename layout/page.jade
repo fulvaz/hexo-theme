@@ -1,4 +1,8 @@
-article
-  h2= page.title
+section#content
+  article
+    div.article-head
+      h2.article-title
+        a= page.title
+    div.article-content.markdown-body
+      p!= page.content
 
-  != page.content

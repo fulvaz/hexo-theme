@@ -1,12 +1,11 @@
-article(class=page.layout)
-  h2= page.title
-  div.meta
-    include _partial/article_meta
-
-    +date(page.date)
-
-    +category(page.categories)
-
-  != page.content
+section#content
+  article(class=page.layout)
+    div.article-head
+      h2.article-title= page.title
+      div.meta.article-date
+        include _partial/article_meta
+        +date(page.date)
+    div.article-content.markdown-body
+      p!= page.content
 
 include _partial/article_pagination

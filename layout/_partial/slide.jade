@@ -1,0 +1,18 @@
+nav.slide-menu
+  div.container
+
+    div#slide-introduction
+      section#slide-avator
+      section#slide-name
+        p= config.author
+      section#slide-introduction-content
+        p= config.introduction
+      section#slide-contacts
+
+    ul
+      li
+        a(href=config.root + 'about') About
+      li
+        a(href=config.root + 'archives') Archive
+      li
+        a(href='https://github.com/subuta/hexo-jade-sass-barebone') Source

@@ -12,3 +12,7 @@ fancybox: false
 
 google_analytics:
 rss:
+
+cdn: ""
+cdn3: http://7xp7jw.com1.z0.glb.clouddn.com/myTheme/static
+

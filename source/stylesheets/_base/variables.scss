@@ -1,0 +1,100 @@
+// Colors
+$plain-white: #FFF;
+$plain-black: #111;
+$basic-black: #333;
+$light-black: #555;
+$basic-gray: #777;
+$light-gray: #ccc;
+$hexo: #1483CD;
+
+$body-background: $plain-white;
+$body-text: $plain-white;
+
+$dark-gray: #242526;
+
+$description-color: $light-gray;
+
+$active-link: $light-gray;
+$active-link-alt: $light-gray;
+$hover-link: $plain-white;
+$visited-link: $light-gray;
+
+$border-color: $light-black;
+
+$code-background: $plain-white;
+$code-border: $light-gray;
+
+$article-title-font-size: 3rem;
+$article-title-color: $basic-black;
+$article-date-color: #b5b5b5;
+$article-content-color: rgba(35, 37, 40, 0.7);
+
+$head-banner-background-color: #242526;
+$footer-background-color: #242526;
+
+//$cdn: "http://7xp7jw.com1.z0.glb.clouddn.com/myTheme/static";
+
+$cdn: "..";
+
+// animation
+@-webkit-keyframes fadeInDown {
+0% {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+100% {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}

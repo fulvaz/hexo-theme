@@ -1,0 +1,13 @@
+header#page-header
+  div.header-background-container
+    video.header-background-video(loop="true" mute="true" autoplay="true" poster=theme.cdn + '/images/header-background.jpg')
+      source(src=theme.cdn + "/videos/Blurry-Lights.webm" type="video/webm")
+      source(src=theme.cdn + "/videos/Blurry-Lights.mp4" type="video/mp4")
+      source(src=theme.cdn + "/videos/Blurry-Lights.ogv" type="video/ogv")
+
+  div.header-background-shelter
+
+  div#masthead
+    div.wrapper
+      h1#site-title= config.title
+      p(id="description")=config.description

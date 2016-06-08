@@ -1,18 +1,18 @@
-header
-  h2 Archive
+div.archive-container
+  header.archive-title
+    h2 Archive
 
-ul.article-list
-  - page.posts.each(function(article){
-
+  ul.archive-list.reveal-detect
+    - page.posts.each(function(article){
     li
       article
-        h3
-          a(href=config.root + article.path)= article.title
-        div.meta
+        div.archive-date
           include _partial/article_meta
-
           +date(article.date)
-
           +category(article.categories)
+        h3.archive-title
+          a(href=config.root + article.path)= article.title
+    - })
 
-  - })
+
+
