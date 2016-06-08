@@ -1,7 +1,10 @@
+Theme for [Hexo](http://zespia.tw/hexo) implemented with [Jade](http://jade-lang.com/) and [Sass](http://sass-lang.com/). 
 
-Barebone theme for [Hexo](http://zespia.tw/hexo) implemented with [Jade](http://jade-lang.com/) and [Sass](http://sass-lang.com/). The current Hexo theme list does not have anything other than ejs themes. I made this as a starting point for anyone who is interested in theming using Jade and Sass.
+write for fun!
 
-Forked from https://github.com/widatama/hexo-jade-barebone (less version) many thanks to original author :)
+Check out in [My Home page](http://fulvaz.github.io)
+
+Forked from https://github.com/subuta/hexo-jade-sass-barebone (sass version) many thanks to original author :)
 
 ## Installation
 
@@ -12,10 +15,10 @@ npm install hexo-renderer-jade --save
 npm install hexo-renderer-sass --save
 ```
 
-Clone this repository to your Hexo themes folder and modify `theme` in `_config.yml` to `jade-sass-barebone`.
+Clone this repository to your Hexo themes folder and modify `theme` 
 
 ```shell
-git clone git://github.com/subuta/hexo-jade-sass-barebone.git themes/jade-sass-barebone
+git clone git@github.com:fulvaz/hexo-theme.git themes/myTheme
 ```
 
 ## License
