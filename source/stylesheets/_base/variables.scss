@@ -32,9 +32,9 @@ $article-content-color: rgba(35, 37, 40, 0.7);
 $head-banner-background-color: #242526;
 $footer-background-color: #242526;
 
-//$cdn: "http://7xp7jw.com1.z0.glb.clouddn.com/myTheme/static";
+$cdn: "http://7xp7jw.com1.z0.glb.clouddn.com/myTheme/static";
 
-$cdn: "..";
+//$cdn:$cdn "..";
 
 // animation
 @-webkit-keyframes fadeInDown {
